@@ -6,7 +6,7 @@
 
 ### Решение 1
 
-![alt text]()
+![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-03-zad1.png)
 
 SELECT district FROM address
 
@@ -20,7 +20,7 @@ AND district NOT LIKE '% %';
 
 ### Решение 2
 
-![alt text]()
+![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-03-zad2.png)
 
 SELECT amount, payment_date FROM payment
 
@@ -34,7 +34,7 @@ AND amount >= 10;
 
 ### Решение 3
 
-![alt text]()
+![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-03-zad3.png)
 
 SELECT rental_id, rental_date, inventory_id, customer_id, return_date, staff_id, last_update
 
@@ -50,7 +50,7 @@ FROM rental ORDER BY rental_id DESC LIMIT 5;
 
 ### Решение 4
 
-![alt text]()
+![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-03-zad4.png)
 
 SELECT customer_id, REPLACE(LOWER(first_name), 'll', 'pp'), LOWER(last_name) FROM customer
 
