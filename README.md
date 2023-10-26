@@ -65,6 +65,16 @@ OR first_name LIKE 'Willie';
 
 Выведите Email каждого покупателя, разделив значение Email на две отдельных колонки: в первой колонке должно быть значение, указанное до @, во второй — значение, указанное после @.
 
+### Решение 5*
+
+![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-03-zad5.png)
+
+SELECT SUBSTRING_INDEX(email, '@', 1) as column1,
+
+RIGHT(email, CHAR_LENGTH(email) - POSITION('@' IN email)) as column2
+
+FROM customer c ;
+
 ### Задание 6*
 
 Доработайте запрос из предыдущего задания, скорректируйте значения в новых колонках: первая буква должна быть заглавной, остальные — строчными.
