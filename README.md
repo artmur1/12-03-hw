@@ -14,6 +14,18 @@ WHERE district LIKE 'K%a'
 
 AND district NOT LIKE '% %';
 
+### Доработка решения 1
+
+В запросе добавил оператор DISTINCT для получения уникальных названий районов.
+
+![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-03-zad_dorab.png)
+
+SELECT DISTINCT district FROM address
+
+WHERE district LIKE 'K%a'
+
+AND district NOT LIKE '% %';
+
 ### Задание 2
 
 Получите из таблицы платежей за прокат фильмов информацию по платежам, которые выполнялись в промежуток с 15 июня 2005 года по 18 июня 2005 года **включительно** и стоимость которых превышает 10.00.
